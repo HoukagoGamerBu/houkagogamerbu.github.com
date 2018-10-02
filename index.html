@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <link rel="stylesheet" href="css/style.css">
+        <!--toppageのためのjavascriptです。-->
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/main.js"></script>
+
+    <!--タイトル-->
+    <title>勇者ネプテューヌ 世界よ宇宙よ刮目せよ！！ アルティメットＲＰＧ宣言！！</title>
+
+</head>
+<!--/HEAD-->
+
+<body>
+    <!--load-->
+    <!--<div id="loading">NOW LOADING</div>-->
+    <!--header-->
+    <header>
+        <div class="logo"></div>
+    </header>
+    <!--menu-->
+    <div class="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a class="selected" href="index.html">TOP</a>
+                </li>
+                <li>
+                    <a href="page/Story/index.html">STORY</a>
+                </li>
+                <li>
+                    <a href="page/Character/index.html">
+                        <span class="new">NEW</span>
+                        CHARACTER
+                    </a>
+                </li>
+                <li>
+                    <a class="no_select" href="#">SYSTEM</a>
+                </li>
+                <li>
+                    <a class="no_select" href="#">SPEC</a>
+                </li>
+                <li>
+                    <a class="no_select" href="#">LINK</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--pagetop-->
+    <div id="pagetop" style="display: none;"><img src="images/pagetop.png"></div>
+
+    <!--key-->
+    <div id="key">
+        <img src="images/key.jpg" alt="key.jpg" width="800" height="950">
+    </div>
+    <!--puroduct-->
+    <div id="top-product-info">
+        <p class="read">PRODUCT INFO</p>
+        
+        <div class="info-box">
+            <div class="jacket"><img src="images/jacket.png" alt="jacket"></div>
+            <div class="info_table">
+                <table class="spec" style="border-collapse:separate; border-spacing:1px;">
+                            <tr>
+								<th>タイトル</th>
+								<td>勇者ネプテューヌ<br>世界よ宇宙よ刮目せよ！！ アルティメットＲＰＧ宣言！！</td>
+							</tr>
+							<tr>
+								<th>対応機種</th>
+								<td>PlayStation&reg;4</td>
+							</tr>
+							<tr>
+								<th>ジャンル</th>
+								<td>ねぷねぷ2D RPG</td>
+							</tr>
+							<tr>
+								<th>発売日</th>
+								<td>2018年9月27日予定</td>
+							</tr>
+							<tr>
+								<th>CERO</th>
+								<td><img src="images/ceroC.gif"></td>
+							</tr>
+							<tr>
+								<th>価格(税込)</th>
+								<td>通常版：7,776円<br>ヒーローエディション：10,476円<br>ＤＬ版：6,912円</td>
+							</tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer id="Top-footer">
+        <div id="footer_wrap">
+            <!--sns_box-->
+            <p id="sns_box" style="text-align:center; margin-bottom:10px;">
+                <!--twitter-->
+                <a href="http://twitter.com/share?url=http://www.compileheart.com/neptune/yu-shanep/&text=「勇者ネプテューヌ 世界よ宇宙よ刮目せよ！！ アルティメットＲＰＧ宣言！！」" onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><img src="images/footer/btn_twitter.png" border="0" style="margin:0 2px;" /></a>
+                <!--line-->
+                <a href="http://line.naver.jp/R/msg/text/?「勇者ネプテューヌ 世界よ宇宙よ刮目せよ！！ アルティメットＲＰＧ宣言！！」http://www.compileheart.com/neptune/yu-shanep/"><img src="images/footer/btn_line.png" alt="LINEで送る" border="0"  /></a>
+                <!--facebook-->
+                <a href="http://www.facebook.com/share.php?u=http://www.compileheart.com/neptune/yu-shanep/" onclick="window.open(this.href, 'window', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><img src="images/footer/btn_fb.png" border="0" style="margin:0 2px;" /></a>
+            </p>
+            <img src="images/footer/ps4_logo.png" alt="ps4_logo.png">
+            <br>
+            <!--banner_box-->
+            <p id="banner_box" style="text-align:center; margin-bottom:10px;">
+                <a href="https://www.ideaf.co.jp/" target="_black"><img src="images/footer/ban_if.png" alt="ban_if.png"></a>
+                <a href="http://www.compileheart.com/" target="_black"><img src="images/footer/ban_ch.png" alt="ban_ch.png"></a>
+                <a href="http://www.artisangamestudios.com/" target="_black"><img src="images/footer/ban_artisan.jpg" alt="ban_artisan.jpg"></a>
+            </p>
+            <p style="text-align:center; margin-bottom: 20px;"><img src="images/footer/ps4_notice.png" style="width: 100%;max-width: 700px;"></p>
+            <p style="color: white; text-align:center;">©2018 IDEA FACTORY / COMPILE HEART / Artisan Studios / ©2018 HP Create By K017A1916 Kim Jin-SU            </p>
+        </div>
+    </footer>
+    <!--canvas-->
+    <canvas id="canvas"></canvas>
+    <script src="js/awer.js"></script>
+</body>
+
+</html>
