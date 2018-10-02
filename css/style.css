@@ -1,0 +1,459 @@
+@charset "utf-8";
+
+/*
+フォント
+*/
+
+/*ゴシック*/
+@import url('https://fonts.googleapis.com/earlyaccess/sawarabigothic.css');
+/*明朝*/
+@import url('https://fonts.googleapis.com/earlyaccess/sawarabimincho.css');
+/*アルファベット*/
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+/*アルファベット*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+
+html, body { margin: 0; }
+
+body {
+  overflow-x:auto; 
+  background-color: black;
+}
+
+#loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* pagetop */
+#pagetop{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+	z-index: 3;
+}
+#pagetop:hover{
+	opacity: 0.7;
+}
+
+/* キャンバス */
+#canvas {
+  height: 100%;
+  background: url(../images/wrapper_bg.jpg); /* 배경 이미지로 대체 가능 */
+  background-size: cover;
+  z-index: -100;
+    
+  /*-webkit-filter: blur(1px);
+  filter: blur(1px);*/
+
+  opacity:1;  /* 透明度 */
+}
+
+#canvas, #visual-content {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  
+  width: 100%;
+}
+
+/* ヘッダー */
+header{
+  margin: 0;
+}
+
+.logo{
+  position: absolute;
+  top: 20px; left: 1%;
+  background: url(../images/logo.png);
+  background-size: cover;
+  width: 300px;
+  height: 120px;
+  opacity:1;  /* 透明度 */
+}
+
+/* ナヴィゲーション */
+.menu {
+  position: absolute;
+  width: auto;
+  top: 25%;
+  left: 2%;
+  margin: 0;
+  padding: 0;
+  background-color:rgba(1, 1, 1, 0.5)
+} 
+
+nav {
+  padding: 20px 10px;
+	padding: 10px;
+	box-sizing: border-box;
+  text-align: center;
+}
+nav ul {
+	list-style: none;
+  display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+  position: relative;
+	display: block;
+	padding: 0 25px;
+	text-decoration: none;
+	text-align: left;
+	font-family: 'Nato Serif', sans-serif;
+	font-size: 30px;
+	color: white;
+}
+/* NEW表示 */
+nav a span.new{}
+
+.new{
+	position: absolute;
+  font-size: 10px;
+  text-align: center;
+	width: 15%;
+	color: #fff;
+	bottom: 0;
+	left: 80%;
+	background-color: #3a97a2;
+	padding: 0.1em 0;
+	font-family: 'Noto Serif', serif;
+}
+
+nav a:hover{
+	background-image: url(../images/header/nav_bg_left.png), url(../images/header/nav_bg_right.png);
+	background-position: left top,right bottom;
+	background-repeat: no-repeat,no-repeat;
+}
+
+nav a.selected{
+	color: #fff;
+	text-shadow: 0px 0px 3px #3a97a2, 1px 0px 3px #3a97a2, 1px 1px 3px #3a97a2, 0px 1px 3px #3a97a2;
+	background-image: url(../images/header/nav_bg_left.png), url(../images/header/nav_bg_right.png);
+	background-position: left top,right bottom;
+	background-repeat: no-repeat,no-repeat;
+}
+
+nav a.no_select{
+	pointer-events: none;
+	opacity:0.5;
+}
+
+nav li a:hover {
+	color:#69D2E7;
+}
+
+/* トップ コンテント */
+#key{
+  position: absolute;
+  top: 30px;
+  left: 30%;
+}
+/* top-product */
+#top-product-info{
+  position: absolute;
+  top: 1100px;
+  width: 100%;
+	background-color: #262a36;
+	box-sizing: border-box;
+	padding: 20px 0 30px 0;
+	background-color: #84492b;
+	background-image: url(../images/bg_pattern1.png);
+	background-repeat: repeat;
+	background-size: 80px;
+	box-shadow: 0px 0px 50px 0px rgba(106,45,24,1.00) inset;
+}
+
+#top-product-info .read{
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+	color: #dee6c2;
+	font-weight: bold;
+	font-family: 'Nato Serif', sans-serif;
+	font-size: 48px;
+}
+
+#top-product-info .info-box{
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+#top-product-info .info-box .jacket{
+	width: 50%;
+	float: left;
+}
+
+#top-product-info .info-box .info_table{
+  font-family: "Yu Mincho", "YuMincho","Sawarabi Mincho","ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", HGS明朝E, "ＭＳ Ｐ明朝", serif;
+	width: 50%;
+	float: right;
+  padding: 2%;
+	box-sizing: border-box;
+}
+
+#top-product-info .info-box .info_table .spec{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:1.5;
+	font-size: 17px;
+}
+#top-product-info .info-box .info_table .spec th{
+	text-align:center;
+	padding: 6px;
+	width: 90px;
+	font-weight: bold;
+	background-color: #262a36;
+	color: #c8b58a;
+}
+#top-product-info .info-box .info_table .spec td{
+  padding-left:3px;
+  text-align: left;
+  vertical-align: center;
+	color: #dee6c2;
+	font-weight: bold;
+}
+
+/* トップ フッター */
+#Top-footer{
+  position: absolute;
+  top: 1626px;
+  width:100%;
+  height:300px;
+  font-size: 15px;  
+  background:black;
+  text-align: center;
+}
+/* sns,banner box */
+#sns_box a:hover, #banner_box a:hover{
+  opacity: 0.5;
+}
+
+
+
+/* コンテント */
+#content{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+
+
+/* Story */
+#story-title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  z-index: 100;
+}
+#story-title p{
+  color: #fff;
+  font-family: "Sawarabi Gothic";
+  font-size: 40px;
+  padding-left: 15px;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px #0a69a5, 1px 0px 3px #0a69a5, 1px 1px 3px #0a69a5, 0px 1px 3px #0a69a5, 2px 1px 3px #0a69a5,0px 3px 3px #0a69a5;
+  background-image: linear-gradient( to right, rgba(0, 140, 255, 0.8), rgba(0, 140, 255, 0));
+  border-left: 10px solid slateblue;
+}
+
+#story{
+  position: absolute;
+  top: 106px;
+  left: 0px;
+  width: 1000px;
+  height: 750px;
+  background-color:rgba(1, 1, 1, 0.5);
+}
+
+#story h3{
+  text-align: center;
+}
+
+#story p{
+	font-size: 17px;
+	font-family: "Yu Gothic", "YuGothic","Sawarabi Gothic","ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", HGS明朝E, "ＭＳ Ｐ明朝",serif;
+	color: #fff;
+  font-weight: bold;
+  text-align: center;
+	text-shadow: 0px 0px 3px #0a69a5, 1px 0px 3px #0a69a5, 1px 1px 3px #0a69a5, 0px 1px 3px #0a69a5, 2px 1px 3px #0a69a5,0px 3px 3px #0a69a5;
+}
+
+/* ストーリ フッター */
+#Story-footer{
+  position: absolute;
+  top: 1100px;
+  width:100%;
+  height:300px;
+  font-size: 15px;  
+  background:black;
+  text-align: center;
+}
+
+
+/* Character */
+#Character-title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  z-index: 100;
+}
+
+#Character-title p{
+  color: #fff;
+  font-family: "Sawarabi Gothic";
+  font-size: 40px;
+  padding-left: 15px;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px #0a69a5, 1px 0px 3px #0a69a5, 1px 1px 3px #0a69a5, 0px 1px 3px #0a69a5, 2px 1px 3px #0a69a5,0px 3px 3px #0a69a5;
+  background-image: linear-gradient( to right, rgba(0, 140, 255, 0.8), rgba(0, 140, 255, 0));
+  background-size: 20;
+  border-left: 10px solid slateblue;
+}
+
+/* character_select  */
+
+.character_select_button .character_new_chrom{
+  position: absolute;
+  font-size:13px;
+  bottom: auto;
+  top:0px;
+  left: 265px;
+  margin: 0;
+	transform: rotate(320deg);
+	-webkit-transform: rotate(320deg);
+  color: white;
+	border-top:solid 1px #FFF;
+  border-bottom:solid 1px #FFF;
+  background-color: #3a97a2;
+}	
+.character_select_button .character_new_firin{
+  position: absolute;
+  font-size:13px;
+  bottom: auto;
+  top:0px;
+  left: 380px;
+  margin: 0;
+	transform: rotate(320deg);
+	-webkit-transform: rotate(320deg);
+  color: white;
+	border-top:solid 1px #FFF;
+  border-bottom:solid 1px #FFF;
+  background-color: #3a97a2;
+}	
+
+#character_select {
+  position: relative;
+  top: 100px;
+  left: 0;
+  width: 800px;
+  height: 90px;
+  float: left;
+  background-color: rgba(141, 85, 20, 0.603);
+  background-image: url(../images/bg_pattern1.png);
+  background-repeat: repeat;
+  background-size: 80px;
+  margin:0;
+  z-index: 100;
+}
+
+.character_select_button {
+  position: absolute;
+  height:24px; 
+  margin:15px 0 0 10px;
+  z-index: 100;
+}
+.character_select_button li {
+  list-style:none; 
+  float:left;
+  cursor:pointer; 
+  background-color: rgba(101, 107, 134, 1);
+  border:2px solid rgb(236, 233, 201);
+  margin:0 3px 0 0;
+  z-index: 100; 
+}
+.character_select_button li:hover {
+  background:rgba(5, 117, 102, 0.0); 
+  border:2px solid #fff;
+  z-index: 100; 
+}
+
+/* character slider */
+#slider_frame{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top:200px;
+}
+
+#slider {
+  position:relative;
+  text-align: left;
+  background: rgba(1, 1, 1, 0.5);
+}
+
+#slider #character_name{
+  position: relative;
+  top: 0;
+  left: -40px;
+  z-index: 100;
+}
+#slider #character{
+  position: relative;
+  top: -150px;
+  right: 140px;
+  z-index: 100;
+}
+#character_bigsize{
+  position: relative;
+  top: -170px;
+  right: 140px;
+  z-index: 10;
+}
+
+#slider ul {
+  font-size: 0;
+}
+#slider ul li {
+  list-style:none; 
+  font-size: 15px; 
+  color: #fff;
+}
+
+.Left_cuser {
+  position: absolute;
+  top: 500px;
+  left: -40px;
+  z-index: 200;
+}
+.Left_cuser img {
+  cursor:pointer;
+}
+.Left_cuser img:hover {
+  opacity: 0.5;
+}
+.Right_cuser{
+  position: absolute;
+  top: 500px;
+  right: -40px;
+  z-index: 200;
+}
+.Right_cuser img {
+  cursor:pointer;
+}
+.Right_cuser img:hover {
+  opacity: 0.5;
+}

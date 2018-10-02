@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--toppageのためのjavascriptです。-->
+    <script src="../../js/jquery-1.11.2.min.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <!--タイトル-->
+    <title>Charecter</title>
+
+</head>
+
+<body>
+    <!--load-->
+    <!--<div id="loading">NOW LOADING</div>-->
+    <!--header-->
+    <header>
+        <div class="logo"></div>
+    </header>
+    <!--menu-->
+    <div class="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">TOP</a>
+                </li>
+                <li>
+                    <a href="../../Page/Story/index.html">STORY</a>
+                </li>
+                <li>
+                    <a class="selected" href="../../Page/Character/index.html">
+                        <span class="new">NEW</span>
+                        CHARACTER
+                    </a>
+                </li>
+                <li>
+                    <a class="no_select" href="#">SYSTEM</a>
+                </li>
+                <li>
+                    <a class="no_select" href="#">SPEC</a>
+                </li>
+                <li>
+                    <a class="no_select" href="#">LINK</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--pagetop-->
+    <div id="pagetop" style="display: none;"><img src="../../images/pagetop.png"></div>
+
+    <!--Character-->
+    <div id="content">
+        <div id="Character-title">
+            <p>CHARACTER</p>
+        </div>
+        <div id="character_select">
+            <ul class="character_select_button">
+                <li id="neptune"><img src="../../images/character/select_neptune.png" alt="select_neptune.png"></li>
+                <li id="noire"><img src="../../images/character/select_noire.png" alt="select_noire.png"></li>
+                <li id="blanc"><img src="../../images/character/select_blanc.png" alt="select_blanc.png"></li>
+                <li id="vert"><img src="../../images/character/select_vert.png" alt="select_vert.png"></li>
+                <li id="chrom"><span class="character_new_chrom">NEW</span><img src="../../images/character/select_chrom.png" alt="select_chrom.png"></li>
+                <li id="histoire"><img src="../../images/character/select_histoire.png" alt="select_histoire.png"></li>
+                <li id="firin"><span class="character_new_firin">NEW</span><img src="../../images/character/select_firin.png" alt="select_firin.png"></li>
+                <li id="kukei"><img src="../../images/character/select_kukei.png" alt="select_kukei.png"></li>
+                <li id="mai"><img src="../../images/character/select_mai.png" alt="select_mai.png"></li>
+                <li id="surara"><img src="../../images/character/select_surara.png" alt="select_surara.png"></li>
+            </ul>
+        </div>
+        <div id="slider_frame">
+            <div class="Left_cuser"><img src="../../images/character/Left_cuser.png" alt="Left_cuser.png"/></div>
+            <div id="slider">
+                <ul>
+                    <li id="neptune">
+                        <img id="character_name" src="../../images/character/neptune_name.png" border="0" alt="neptune_name.png">
+                        <img id="character" src="../../images/character/neptune.png" width="1200" height="1287" alt="neptune.png">
+                    </li>
+                    <li id="noire">
+                        <img id="character_name" src="../../images/character/noire_name.png" border="0" alt="noire_name.png">
+                        <img id="character" src="../../images/character/noire.png" width="1200" height="1287" alt="noire.png">
+                    </li>
+                    <li id="blanc">
+                        <img id="character_name" src="../../images/character/blanc_name.png" border="0" alt="blanc_name.png">
+                        <img id="character" src="../../images/character/blanc.png" width="1200" height="1287" alt="blanc.png">
+                    </li>
+                    <li id="vert">
+                        <img id="character_name" src="../../images/character/vert_name.png" border="0" alt="vert_name.png">
+                        <img id="character" src="../../images/character/vert.png" width="1200" height="1287" alt="vert.png">
+                    </li>
+                    <li id="chrom">
+                        <img id="character_name" src="../../images/character/chrom_name.png" border="0" alt="chrom_name.png">
+                        <img id="character" src="../../images/character/chrom.png" width="1200" height="1287" alt="chrom.png">
+                    </li>
+                    <li id="histoire">
+                        <img id="character_name" src="../../images/character/histoire_name.png" border="0" alt="histoire_name.png">
+                        <img id="character" src="../../images/character/histoire.png" width="1200" height="1287" alt="histoire.png">
+                    </li>
+                    <li id="firin">
+                        <img id="character_name" src="../../images/character/firin_name.png" border="0" alt="firin_name.png">
+                        <img id="character" src="../../images/character/firin.png" width="1200" height="1287" alt="firin.png">
+                    </li>
+                    <li id="kukei">
+                        <img id="character_name" src="../../images/character/kukei_name.png" border="0" alt="kukei_name.png">
+                        <img id="character" src="../../images/character/kukei.png" width="1200" height="1287" alt="kukei.png">
+                    </li>
+                    <li id="mai">
+                        <img id="character_name" src="../../images/character/mai_name.png" border="0" alt="mai_name.png">
+                        <img id="character" src="../../images/character/mai.png" width="1200" height="1287" alt="mai.png">
+                    </li>
+                    <li id="surara">
+                        <img id="character_name" src="../../images/character/surara_name.png" border="0" alt="surara_name.png">
+                        <img id="character_bigsize" src="../../images/character/surara.png" width="1200" height="1287" alt="surara.png">
+                    </li>
+                </ul>
+            </div>
+            <div class="Right_cuser"><img src="../../images/character/Right_cuser.png" alt="Right_cuser.png"/></div>
+        </div>
+    </div>
+
+    <!--canvas-->
+    <canvas id="canvas"></canvas>
+    <script src="../../js/awer.js"></script>
+</body>
+
+</html>
